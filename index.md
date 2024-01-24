@@ -12,3 +12,5 @@ also supporting code highlighting
 def code_fragment() -> bool:
     return False
 ```
+
+[return to the github repo](https://github.com/tumi8/tumi8-theme)
