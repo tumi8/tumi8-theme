@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name     = "tumi8-theme"
-  spec.version  = "0.0.1.dev"
+  spec.version  = "0.0.1"
   spec.authors  = ["Markus Sosnowski", "Sebastian Gallenmüller", "Florian Wiedner"]
 
   spec.summary  = "A Tum I8 theme for publication pages."
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", ">= 4.0", "< 5.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
-  spec.add_runtime_dependency "google-protobuf", "<= 3.24"
+  spec.add_runtime_dependency "google-protobuf", "<= 3.22"
 
   spec.add_development_dependency "bundler"
 end

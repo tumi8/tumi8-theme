@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     tumi8-theme (0.0.1.dev)
-      google-protobuf (< 3.22)
+      google-protobuf (<= 3.24)
       jekyll (>= 4.0, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
