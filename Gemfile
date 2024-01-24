@@ -17,3 +17,5 @@ gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 # gem "webrick", "~> 1.7"
 
 gem "webrick", "~> 1.8"
+
+gem "google-protobuf", "<= 3.22"
