@@ -1,0 +1,2 @@
+gem update --system
+gem install bundler rails --no-ri --no-rdoc

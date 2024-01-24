@@ -1,0 +1,15 @@
+<nav class="navigation">
+  {%- if site.navtitle -%}
+  <div style="padding: 10pt 5pt 5pt 5pt; background-color: white"><b>{{ site.navtitle }}</b></div>
+  {%- endif -%}
+
+	<ul class="nav-list">
+
+    {% assign pages = site.pages | where_exp: 'item', 'item.toc != nil' | sort: 'order' %}
+    {% for item in pages %}
+        <li class="{% if item.url == page.url %}current_path current{% endif %}">
+          <a href="{{ item.url  | relative_url }}">{{ item.toc }}</a>
+        </li>
+		{%- endfor -%}
+	</ul>
+</nav>
