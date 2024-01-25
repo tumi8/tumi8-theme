@@ -62,3 +62,28 @@
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
+
+
+pre.highlight {
+  position: relative;
+
+  .copy {
+    position: absolute;
+    top: 1ex;
+    right: 1ex;
+    width: 4em;
+    border: none;
+    border-left: 0px solid #3070b3;
+
+    padding: 3px;
+
+    -webkit-transition: border-left-width 0.05s ease-in;
+    transition: border-left-width 0.05s ease-in;
+
+    background: #e6e6e6;
+
+    &:active,&:hover {
+      border-left: 2px solid #3070b3;
+    }
+  }
+}
