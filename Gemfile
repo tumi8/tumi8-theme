@@ -9,7 +9,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+# gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.5"
@@ -19,3 +19,5 @@ gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "webrick", "~> 1.8"
 
 gem "google-protobuf", "<= 3.22"
+
+gem "kramdown-parser-gfm", "~> 1.1"
