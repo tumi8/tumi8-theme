@@ -66,25 +66,28 @@
 
 .highlight {
   position: relative;
+  pre {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    background: #f1f1f1;
+  }
   margin-bottom: 1em;
 
   .copy {
     position: absolute;
     top: 1ex;
     right: 1ex;
-    width: 4em;
     border: none;
-    border-left: 0px solid #3070b3;
 
-    padding: 3px;
 
-    -webkit-transition: border-left-width 0.05s ease-in;
-    transition: border-left-width 0.05s ease-in;
-
-    background: #e6e6e6;
+    color: #fff;
+    background-color: #3070b3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
 
     &:active,&:hover {
-      border-left: 2px solid #3070b3;
+      background-color: #4889ce;
     }
   }
 }

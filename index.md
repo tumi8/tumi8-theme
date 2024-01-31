@@ -1,10 +1,13 @@
 ---
-layout: page
+layout: main
 toc: Home
 order: 1
+description: Example page for the TUM i8 layout
+image: 
+  url: assets/images/dummy.png
+  title: 
+  copyright: 
 ---
-
-Example page for the TUM i8 layout
 
 supporting code highlighting:
 

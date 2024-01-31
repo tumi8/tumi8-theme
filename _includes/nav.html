@@ -1,15 +1,11 @@
-<nav class="navigation">
-  {%- if site.navtitle -%}
-  <div style="padding: 10pt 5pt 5pt 5pt; background-color: white"><b>{{ site.navtitle }}</b></div>
-  {%- endif -%}
-
-	<ul class="nav-list">
+<nav class="subnav js-main-nav">
+  <ul class="subnav__list clearfix js-main-nav-list">
 
     {% assign pages = site.pages | where_exp: 'item', 'item.toc != nil' | sort: 'order' %}
     {% for item in pages %}
-        <li class="{% if item.url == page.url %}current_path current{% endif %}">
-          <a href="{{ item.url  | relative_url }}">{{ item.toc }}</a>
-        </li>
-		{%- endfor -%}
-	</ul>
+    <li class="subnav__item js-main-nav-item-1-level">
+      <a href="{{ item.url  | relative_url }}" class="{% if item.url == page.url %}subnav__link--current subnav__link--active{% endif %} subnav__link subnav__link--has-submenu js-main-nav-link">{{ item.toc }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
 </nav>
