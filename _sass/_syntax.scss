@@ -68,9 +68,15 @@
   position: relative;
   pre {
     border: 1px solid #dddddd;
-    padding: 15px;
+    padding: 1em;
     background: #f1f1f1;
     overflow: auto;
+
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+
+    // border-radius: 3px;
+    font-size: 85%;
+    line-height: 1.45;
   }
   margin-bottom: 1em;
 
