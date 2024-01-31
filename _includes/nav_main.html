@@ -1,14 +1,19 @@
-
-<nav class="main-nav js-main-nav" style="margin-bottom: 0">
+<nav class="main-nav js-main-nav">
   <ul class="main-nav__list clearfix js-main-nav-list">
 
-    {% assign pages = site.pages | where_exp: 'item', 'item.toc != nil' | sort: 'order' %}
-    {% for item in pages %}
+    <div class="container">
+      <div class="row">
 
-    <li class="main-nav__item-1-level main-nav__item-1-level--hover js-main-nav-item-1-level">
-      <a href="{{ item.url  | relative_url }}" class="{% if item.url == page.url %}main-nav__link--current{% endif %} main-nav__link js-main-nav-link main-nav__link--1-level">{{ item.toc }}</a>
-    </li>
+        {% assign pages = site.pages | where_exp: 'item', 'item.toc != nil' | sort: 'order' %}
+        {% for item in pages %}
 
-    {%- endfor -%}
+
+        <li class="main-nav__item-1-level main-nav__item-1-level--hover js-main-nav-item-1-level">
+          <a href="{{ item.url  | relative_url }}" class="{% if item.url == page.url %}main-nav__link--current{% endif %} main-nav__link js-main-nav-link main-nav__link--1-level">{{ item.toc }}</a>
+        </li>
+
+        {%- endfor -%}
+      </div>
+    </div>
   </ul>
 </nav>
