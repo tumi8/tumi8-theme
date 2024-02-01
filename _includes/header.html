@@ -5,16 +5,11 @@
         <div class="logo-bar__inner">
 
           <div class="logo-bar__word-mark-link">
-          <a href="http://www.net.in.tum.de/" title="Chair of Network Architectures and Services" target="_self" class="logo-bar__link">
-            Chair of Network Architectures and Services
-          </a><br>
-
-          <a href="http://www.cit.tum.de/" title="TUM School of Computation, Information and Technology" target="_self" class="logo-bar__link">
-            TUM School of Computation, Information and Technology
-          </a><br>
-          <a href="http://www.tum.de/" title="TUM School of Computation, Information and Technology" target="_self" class="logo-bar__link">
-            Technical University of Munich
-          </a>
+            {% for header in site.data.header.list %}
+            <a href="{{ header.url }}" title="{{ header.name }}" target="_self" class="logo-bar__link">
+              {{ header.name }}
+            </a><br>
+            {% endfor %}
           </div>
 
           <a href="http://www.tum.de" title="Startseite" target="_self" class="logo-bar__link logo-bar__logo-link">
