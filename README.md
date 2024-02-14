@@ -13,12 +13,15 @@ If you want so see how to use the theme as remote-theme, have a look at https://
 
 To create your own pages:
 1. create a new file under /pages
-2. Set the `page` or `main` layout
+2. We have two layouts, the `page` or `main` layout
    - `main` will have the menu on top and is for main pages
    - `page` has the menu on the left side and is for sub pages
    - See https://portal.mytum.de/corporatedesign/stylesweb/living_styleguide for allowed usage
-3. If the page should appear in the menu:
-    - Add a title `toc` and the order in which it should appear `order`
+
+## Navigation
+
+### Quick Navigation
+If you want a simple menu, add a title `toc` and the order in which it should appear `order`
 
 A full page front matter could look like this:
 
@@ -29,6 +32,25 @@ A full page front matter could look like this:
     order: 2
     toc: 'My Page'
     ---
+
+### Multi Layer Navigation
+
+If you have more complex setups, use a `navigation.yml` file under `_data/navigation.yml`. Currently only supported for the `page` layout with two levels.
+See https://portal.mytum.de/corporatedesign/livingstyleguide/section-3.html if you want to extend the functionality.
+For example:
+
+    toc:
+    - name: Home
+      url: /
+    - name: Data
+      url: /data/
+      subfolderitems:
+      - name: Data 1
+        url: /data/data1/
+      - name: Data 2
+        url: /data/data2/
+    - name: Pictures
+      url: /picture/
 
 ## Styles
 
