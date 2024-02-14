@@ -12,7 +12,13 @@
           {% assign isActive = false  %}
           {% endif %}
 
-          <a href="{{ item.url  | relative_url }}" class="{% if isActive %}subnav__link--active{% endif %} {% if item.url == page.url %}subnav__link--current{% endif %} {% if item.subfolderitems %}subnav__link--has-submenu{% endif %} subnav__link">{{ item.name }}</a>
+          {% if item.url != true and item.subfolderitems %}
+            {% assign myURL = item.subfolderitems[0].url  %}
+          {% else %}
+            {% assign myURL = item.url  %}
+          {% endif %}
+
+          <a href="{{ myURL  | relative_url }}" class="{% if isActive %}subnav__link--active{% endif %} {% if item.url == page.url %}subnav__link--current{% endif %} {% if item.subfolderitems %}subnav__link--has-submenu{% endif %} subnav__link">{{ item.name }}</a>
 
           {% if item.subfolderitems and isActive %}
             <ul class="subnav__submenu subnav__submenu--2-level">
