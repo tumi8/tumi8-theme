@@ -35,7 +35,7 @@ A full page front matter could look like this:
 
 ### Multi Layer Navigation
 
-If you have more complex setups, use a `navigation.yml` file under `_data/navigation.yml`. Currently only supported for the `page` layout with two levels.
+If you have more complex setups, use a `navigation.yml` file under `_data/navigation.yml`. Currently only supporting two levels.
 See https://portal.mytum.de/corporatedesign/livingstyleguide/section-3.html if you want to extend the functionality.
 For example:
 
