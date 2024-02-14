@@ -28,3 +28,14 @@ also for your bibliography
 ```
 
 [return to the github repo](https://github.com/tumi8/tumi8-theme)
+
+
+<div class="accordion-box">
+  <div class="accordion-box__title">
+    Demo
+  </div>
+  <div class="accordion-box__content">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vu</p>
+  </div>
+</div>

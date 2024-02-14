@@ -5399,7 +5399,7 @@ div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap {
 }
 
 .js .accordion-box--opened .accordion-box__title::after {
-  background-image: url("../../Images/icon/minus.png")
+  content: '\2796';
 }
 
 .js .accordion-box--opened .accordion-box__content {
@@ -5432,8 +5432,7 @@ div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap {
 }
 
 .js .accordion-box__title::after {
-  background: url("../../Images/icon/plus.png") no-repeat center center;
-  content: '';
+  content: '\02795';
   display: block;
   height: 18px;
   position: absolute;
