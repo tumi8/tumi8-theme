@@ -16,8 +16,8 @@ gemspec
 
 # gem "webrick", "~> 1.7"
 
-gem "webrick", "~> 1.8"
+gem "webrick", "~> 1.9.1"
 
-gem "google-protobuf", "<= 3.22"
+gem "google-protobuf", "< 5.0"
 
 gem "kramdown-parser-gfm", "~> 1.1"
